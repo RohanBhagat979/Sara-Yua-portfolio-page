@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: whitesmoke;
+}
+
+
+
+
+/* navbar */
+
+
+
+
+
+nav{
+    /* height: 100px; */
+    padding: 1em 0em;
+    margin-top: 0.5em;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brandTitle{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 1em;
+}
+.allnavlinks ul{
+    display: flex;
+}
+.allnavlinks li{
+    list-style-type: none;
+    margin: 0em 0.8em;
+}
+.allnavlinks a{
+    display: block;
+    text-decoration: none;
+    padding: 0.8em 1.2em; 
+    background-color: rgb(22, 21, 21);
+    color: white;
+    border-radius: 10px;
+}
+
+.toggleNavBar{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 40px;
+    height: 40px;
+    padding: 0.1em;
+    background-color: rgb(0, 0, 0);  
+    /* display: flex; */
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    
+}
+
+.bar{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(181, 255, 8);
+    border-radius: 10px;
+}
+
+
+
+/* main */
+
+
+
+main{
+    margin-top: 5em;
+}
+
+.InfoWarp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0em auto;
+}
+
+.profilePic img{
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+.profilePic{
+    width: 40%;
+    
+
+}
+.info{
+    width: 50%;
+    text-align: left;
+}
+.info p{
+    margin:1em 0em;
+    font-size: 1.2rem;
+}
+
+
+.careerSoFar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7em auto;
+    width: 80%;
+}
+.careerSoFarInfo{
+    width: 45%;
+}
+.skills{
+    width: 45%;
+}
+.skill{
+    display: inline-block;
+    font-size: 1.1rem;
+    border: 2px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid #ced1df;
+    border-radius: 8px;
+}
+.careerSoFarInfo h1{
+    font-size: 2.2rem;
+    margin-bottom: 1em;
+}
+.careerSoFarInfo p{
+    font-size: 1.3rem;
+    
+}
+
+
+/* contact me */
+
+.contactMe{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 7em auto;   
+}
+.getInTouch{
+    font-size: 4rem;
+    width: 45%;
+}
+.formWrap{
+    width: 45%;
+}
+
+form label{
+    font-size: 2rem;
+}
+form input{
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+}
+
+form div{
+    margin: 1em 0em;
+}
+#message{
+    height: 80px;
+}
+
+#submitBtn{
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    background-color: black;
+}
+
+
+
+
+
+
+/* responsive */
+
+
+@media (max-width:600px) {
+
+    /* navBar */
+
+
+
+    nav{
+        /* height: 200px; */
+        padding: 1em 0em;
+        margin-top: 0.2em;
+        background-color: yellowgreen;
+        flex-direction: column;
+        justify-content: center;
+        
+        align-items: flex-start;
+    }
+    .allnavlinks{
+        width: 100%;
+    }
+    .allnavlinks ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .allnavlinks li{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .allnavlinks a{
+        width: 100%;
+    }
+    .toggleNavBar{
+        display: flex;
+    }
+    .allnavlinks{
+        /* display: flex; */
+        display: none;
+    }
+    .activeNavBar{
+        display: flex;
+    }
+
+
+/* main */
+
+
+
+    .InfoWarp{   
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .profilePic{
+        width: 90%;
+    }
+    .info{
+        margin-top: 1em;
+        width: 90%;
+        text-align: left;
+    }
+
+
+    .careerSoFar{
+        flex-direction: column;
+        width: 90%;
+        margin: 1em auto;
+    }
+    .careerSoFarInfo{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .skills{
+        margin-top: 2.5em;
+        width: 100%;
+    }
+
+/* contact */
+    .contactMe{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+           
+    }    
+    .getInTouch{
+        width: 100%;
+    }
+    .formWrap{
+        width: 100%;
+    }
+
+
+
+}
